@@ -1,0 +1,32 @@
+# --- Java & Maven (sentinel-backend/) ---
+sentinel-backend/target/
+sentinel-backend/.gradle/
+sentinel-backend/build/
+sentinel-backend/.idea/
+sentinel-backend/*.iml
+sentinel-backend/.mvn/
+
+# --- Python & FastAPI (ai-service/) ---
+ai-service/.venv/
+ai-service/env/
+ai-service/venv/
+ai-service/__pycache__/
+ai-service/*.py[cod]
+ai-service/*.pyo
+ai-service/.env
+ai-service/shared/
+
+# --- Shared Volumes & Data ---
+/shared/
+scan-data/
+
+# --- IDEs & OS Files ---
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+logs/

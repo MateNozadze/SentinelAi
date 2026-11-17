@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:17
+    container_name: sentinel-db
+    environment:
+      POSTGRES_DB: sentinel_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin
+    ports:
+      - "5433:5432"
+    volumes:
+      - sentinel-pgdata:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  sentinel-pgdata:
+    external: true
